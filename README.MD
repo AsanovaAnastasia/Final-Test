@@ -1,4 +1,4 @@
-Задание
+# Задание
 1. Используя команду cat в терминале операционной системы Linux, создать
 два файла Домашние животные (заполнив файл собаками, кошками,
 хомяками) и Вьючные животными заполнив файл Лошадьми, верблюдами и
@@ -16,7 +16,7 @@ dog
 hamster
 EOT
 
-# Проверяю:
+## Проверяю:
 cat pets.txt   
 # Вывод:
 cat  
@@ -29,17 +29,17 @@ camel
 donkey
 EOT
 
-# Проверяю:
+## Проверяю:
 cat pack_animals.txt   
-# Вывод:  
+## Вывод:  
 horse  
 camel  
 donkey
 
-# Объединяю два файла:  
+## Объединяю два файла:  
 cat pets.txt pack_animals.txt > animals.txt
 
-# Проверяю:  
+## Проверяю:  
 cat animals.txt   
 # Вывод:  
 cat  
@@ -49,11 +49,11 @@ horse
 camel  
 donkey  
 
-# Переименовываю:  
+## Переименовываю:  
 mv animals.txt human_friends.txt  
-# Проверяю:  
+## Проверяю:  
 ls  
-# Вывод:  
+## Вывод:  
 human_friends.txt  pack_animals.txt  pets.txt  
 
 
@@ -66,13 +66,13 @@ human_friends.txt  pack_animals.txt  pets.txt
 mkdir newdir
 mv human_friends.txt newdir
 
-# Проверяю:
+## Проверяю:
 ls
-# Вывод:
+## Вывод:
 newdir  pack_animals.txt  pets.txt
 
 ls newdir
-# Вывод:
+## Вывод:
 human_friends.txt
 
 
@@ -85,9 +85,9 @@ sudo dpkg -i mysql-apt-config_0.8.30-1_all.deb
 sudo apt update
 sudo apt install mysql-server
 
-# Проверяю:
+## Проверяю:
 systemctl status mysql
-# Вывод:
+## Вывод:
 ● mysql.service - MySQL Community Server
      Loaded: loaded (/usr/lib/systemd/system/mysql.service; enabled; preset: enabled)
      Active: active (running) since Mon 2024-06-17 20:36:27 UTC; 1min 32s ago
@@ -105,14 +105,14 @@ systemctl status mysql
 
 4. Установить и удалить deb-пакет с помощью dpkg.
 
-# загрузка пакета nginx
+## загрузка пакета nginx
 wget -c http://ftp.ru.debian.org/debian/pool/main/n/nginx/nginx_1.22.1-9_amd64.deb
-# Устанавливаю пакет
+## Устанавливаю пакет
 sudo dpkg -i nginx_1.22.1-9_amd64.deb
-# Исправление зависимостей…
+## Исправление зависимостей…
 sudo apt-get install -f
 
-# Удаляю пакет
+## Удаляю пакет
 sudo dpkg -r nginx nginx-common
 
 
